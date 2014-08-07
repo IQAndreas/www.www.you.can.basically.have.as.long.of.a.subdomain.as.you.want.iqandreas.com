@@ -2,23 +2,33 @@
 layout: slate
 permalink: index.html
 ---
-### What is this place?
 
-Don't you just hate it when you have several [GitHub pages](http://pages.github.com/) for your projects that are all supposed to share the same layout, then you go and tweak the layout a bit, forcing you to update the changes and rebuild every single project page?
+In today's modern web of clickable links, bookmarks, and QR codes, when was the last time you actually typed in a url into your browser? Many people urge against using really long domain names, but I disagree, so long as you appear on Google, people will find your site that way, regardless of how long your domain name is.
 
-Since you cannot inherit [Jekyll](http://jekyllrb.com/) projects from another project, this at least helps soften the blow.
+Longer domain names allow you to be more descriptive, and reel in a wider audience. How much can a user really tell about your website by just looking at the domain name? Probably not much.
 
-The CSS, JavaScript, and images are all stored here (and accessed via absolute URLs [[1]](https://github.com/IQAndreas/gh-pages-template/blob/gh-pages/_includes/imports/stylesheets.html) [[2]](http://static.iqandreas.com/assets/stylesheets/slate/main.css)), so if you update them once, the changes will propagate to all pages that use them. The changes to `_layouts`, `_includes`, and `_plugins` are only a `git merge` away from being updated in (but this is still very manual, and annoying, and needs to be done for every single project you want the change applied to).
+Let's take an actual use case where I supported a local business by "upgrading" their domains to a more descriptive and "user-friendly" domain. They started with the paltry and not so descriptive domain name of [**MedTechSweden.com**](http://medtechsweden.com/).
 
-### This isn't the best solution
+After I was done with them, their domain name did all the talking for them, so their website didn't have to:
 
-GitHub staff (and/or Jekyll authors), if you are reading this, please let us allow Jekyll projects/GitHub Pages to inherit from other other projects, so if the "parent" updates, all children that are affected rebuild. _Alas, I imagine this may be taxing on the GitHub Pages build servers, but at least I can dream this feature will one day be added._
+<li class="flink" style="background-image: url(http://medtechsweden.com/favicon.ico);"><a href="http://A.company.that.manufactures.medical.products.such.as.vacuum.spine.boards.and.vacuum.extremity.splints.used.by.EMTs.and.rescue.personnel.Our.business.name.is.MedTechSweden.com">A.company.that.manufactures.medical.products.such.as.vacuum.spine.boards.and.vacuum.extremity.splints.used.by.EMTs.and.rescue.personnel.Our.business.name.is.MedTechSweden.com</a></li>
 
-### Credits
+Even my own personal website, [**IQAndreas.com**](http://www.iqandreas.com/), can instead be reached via the following, more descriptive domain: 
 
-This project is generously hosted by [GitHub Pages](http://pages.github.com/), and powered by [Jekyll](http://jekyllrb.com/).
+<li class="flink iqandreas_com"><a href="http://I.am.a.programmer.with.multiple.programming.languages.under.my.belt.but.im.usually.more.interested.in.learning.them.and.arguing.about.them.than.actually.coding.in.them.Known.on.the.internet.as.IQAndreas.com/">I.am.a.programmer.with.multiple.programming.languages.under.my.belt.but.im.usually.more.interested.in.learning.them.and.arguing.about.them.than.actually.coding.in.them.Known.on.the.internet.as.IQAndreas.com</a></li>
 
-The site design is a modified version of Slate by [Jason Costello](http://twitter.com/jsncostello).
+### Is there actually a limit?
 
-Unless otherwise indicated, everything else on this site (including images, code, and content) is owned by [Andreas Renberg](mailto:contact@iqandreas.com) and made available under [{{ site.github_license }}]({{site.github_license_url}}).
+Yes, sadly, there is a limit.
+
+According to [the Wikipedia entry on the _Domain Name System_](http://en.wikipedia.org/wiki/Domain_Name_System#Domain_name_syntax):
+
+> Each label may contain up to 63 characters. The full domain name may not exceed the length of 253 characters in its textual representation.
+
+However, so long as you stay below that hard limit arbitrarily set by the higher-ups, you can go nuts and create as long of a subdomain (or more accurately, as many labels) as needed to appropriately describe your website to the end user.
+
+### What about the extra 'www.www'?
+
+That is an ode to [www.www.extra-www.org](http://www.www.extra-www.org/), an organization determined to keep the `www` part of domains alive by urging site owners and web developers to add an extra `www` to the beginning of their site to compensate for threats such as [no-ww.org](http://no-www.org/).
+
 
